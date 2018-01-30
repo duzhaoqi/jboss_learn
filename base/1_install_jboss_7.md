@@ -29,8 +29,8 @@ apt源：网络源
 ```
 export JAVA_HOME=/opt/portal/jdk1.7.0_80
 export JRE_HOME=$JAVA_HOME/jre
-export export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JRE_HOME/lib:$MPEG_HOME/WEB-INF/classes/
-export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$MPEG_HOME:/bin:$PATH
+export export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JRE_HOME/lib
+export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
 ```
 
 使其生效：`source /etc/profile.d/java.sh`
@@ -84,9 +84,9 @@ export PATH=$JBOSS_HOME/bin:$PATH
 ./standalone.sh 
 ```
 
-由于是非后台执行，所以我们按下**`Ctrl+C`**时就会停掉服务。我们启动后输入IP加端口号，可以在浏览器中看到如下内容：
+由于是非后台执行，所以我们按下`Ctrl+C`时就会停掉服务。我们启动后输入IP加端口号，可以在浏览器中看到如下内容：
 
-![install](imgs/1_install_7.png)
+![install](../imgs/1_install_7.png)
 
 
 ## 一个启动脚本
